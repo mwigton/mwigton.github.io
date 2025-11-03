@@ -11,9 +11,8 @@ client: "US Army"
 role: "Developer"
 videos:
   - vimeoId: 133166658
+software: "3DS Max, Photoshop, Unity 4.1, Visual Studio, C#"
+platforms: "iOS, Android, Desktop"
 ---
-
-Target: iOS | Android | Desktop  
-Software: 3DS Max | Photoshop | Unity 4.1 | Visual Studio | C#  
 
 Created for the US Army, this prototype was a proof of concept simulating operator maintenance procedures with a DCS Panel. Designs and storyboards by a co-worker, all development and modeling by myself.

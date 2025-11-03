@@ -71,31 +71,32 @@ title: "Jekyll Curate"
 category_dir: category
 
 colors:
-  #light-mode colors
-  primary_bg: "#0d042b"
-  primary_bg_2: "#0d042b"
-  primary_bg_3: "#0d042b"
+  # light mode
+  primary_bg: "#0a1a33"
+  primary_bg_2: "#0c2344"
+  primary_bg_3: "#0d2c55"
   primary_text: "#fdfcf9"
   base_bg: "#fdfcf9"
   base_bg_2: "#f7f6ed"
-  base_bg_3: "#faebd7"
-  base_text: "#0d042b"
-  base_text_2: "#3b364c"
-  logo_text: "#0d042b"
-  header_text: "#0d042b"
+  base_bg_3: "#eae8dd"
+  base_text: "#0a1a33"
+  base_text_2: "#2b3b52"
+  logo_text: "#0a1a33"
+  header_text: "#0a1a33"
 
-  # dark-mode colors
+  # dark mode
   primary_bg_dark: "#fdfcf9"
   primary_bg_2_dark: "#fdfcf9"
   primary_bg_3_dark: "#fdfcf9"
-  primary_text_dark: "#0b0326"
-  base_bg_dark: "#0b0326"
-  base_bg_2_dark: "#150c32"
-  base_bg_3_dark: "#251654"
+  primary_text_dark: "#081629"
+  base_bg_dark: "#081629"
+  base_bg_2_dark: "#0b213b"
+  base_bg_3_dark: "#103054"
   base_text_dark: "#f5f5ec"
-  base_text_2_dark: "#929eaf"
+  base_text_2_dark: "#98a5b7"
   logo_text_dark: "#fdfcf9"
   header_text_dark: "#fdfcf9"
+
 
 fonts:
   use_google_fonts: false
@@ -137,8 +138,8 @@ darkmode:
   show_dark_mode_toggle_in_mobile_menu: true
 
 cookie_banner:
-  enabled: true
-  show_manage_cookies_at_bottom: true
+  enabled: false
+  show_manage_cookies_at_bottom: false
 
 analytics:
   google_analytics_id: "" # G-XXXXXXXXXX
@@ -149,7 +150,7 @@ analytics:
 
 comments:
   commento:
-    enabled: true # you must have a commento account and be on the correct domain. does not work locally.
+    enabled: false # you must have a commento account and be on the correct domain. does not work locally.
   disqus:
     shortname: "" # Your disqus shortcode for example "zerostatic". leave this blank ie "" to disable.
 
