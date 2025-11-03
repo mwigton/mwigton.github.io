@@ -1,13 +1,13 @@
 ---
 layout: project-left # alternative layouts: project, project-left, project-right, project-top
-title: "VR"
+title: "Epsilon VR"
 description: "Breathing new life into old industrial estates"
 date: 2018-12-20
 weight: 3
-thumbnail: "/assets/images/projects/wopr/wopr_thumbnail.jpg"
-image: "/assets/images/gen/wopr/wopr_thumbnail.jpg"
+thumbnail: "/assets/images/projects/epsilonvr/epsilonVRBkgrd.jpg"
+image: "/assets/images/projects/epsilonvr/epsilonVRBkgrd.jpg"
 categories: ["Development"]
-client: "Cold War Museum"
+client: "Epsilon Systems Solutions"
 role: "Developer"
 gallery:
   - url: /assets/images/epsilonvr/epsilonvr-panel.jpg

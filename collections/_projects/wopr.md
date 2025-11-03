@@ -11,10 +11,9 @@ client: "Cold War Museum"
 role: "Developer"
 videos:
   - vimeoId: 148292694
+software: "OpenWatcom IDE, C"
+platforms: "IBM XT PC DOS"
 ---
-
-Target: IBM XT PC DOS  
-Software: OpenWatcom IDE | C |
 
 I volunteered at the Cold War Museum and discovered an IBM PC XT in storage. I decided to restore it and create a fun project, an emulation of the computer screens from WarGames.
 
