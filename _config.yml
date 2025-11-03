@@ -1,0 +1,15 @@
+title: "Michael Wigton"
+email: "you@example.com"
+description: "A simple dark Jekyll portfolio site"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://localhost:4000"
+markdown: kramdown
+theme: minima
+exclude: ["node_modules"]
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Build settings
+permalink: /:title/
