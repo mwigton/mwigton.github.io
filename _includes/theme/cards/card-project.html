@@ -1,3 +1,4 @@
+
 {% assign title = include.title %}
 {% assign description = include.description %}
 {% assign thumbnail = include.thumbnail %}
@@ -10,26 +11,69 @@
 {% assign style = include.style | default: "column" %}
 {% assign show_read_more = include.show_read_more %}
 {% assign client = include.client %}
+{% assign content = include.content %}
 {% assign thumbnail_size = include.thumbnail_size %}
 
 <div class="card card-project card-{{ style }} {% if thumbnail %}card-has-thumbnail{% endif %} {% if icon or fa_icon %}card-has-icon{% endif %}">
-
-  {% if thumbnail %}
-    <div class="card-thumbnail {% if thumbnail_size %}card-thumbnail-{{ thumbnail_size }}{% endif %}">
-      <a href="{{ url | relative_url }}"><img alt="{{ title }}" src="{{ thumbnail | relative_url }}"/></a>
-    </div>
-  {% endif %}
-
-  <div class="card-content">
-    <div class="card-title">
-      <h2>
-        <a href="{{ url | relative_url }}">{{ title }}</a>
-      </h2>
-    </div>
-    {% if client %}
-      <div class="card-client">
-        {{ client }}
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-6 mb-md-0">
+        <div class="gallery gallery-single-column">
+          {% for item in include.videos limit: limit %}
+            {% include vimeoPlayer.html id=item.vimeoId %}
+          {% endfor %}
+          {% for item in include.gallery limit: limit %}
+            <div class="gallery-item">
+              <div class="gallery-image"><img src="{{ item.image | relative_url }}"/></div>
+              <div class="gallery-caption">{{ item.caption }}</div>
+            </div>
+          {% endfor %}
+        </div>
       </div>
-    {% endif %}
+
+      <div class="col-12 col-md-6">
+
+        {% if include.title %}
+          <div class="project-heading">
+            <h1>{{ title }}</h1>
+          </div>
+        {% endif %}
+
+        <div class="content">{{ content }}</div>
+
+        {% if include.date %}
+          <div class="project-date">
+            <strong>Date </strong><span>{{ include.date | date_to_long_string }}</span>
+          </div>
+        {% endif %}
+
+        {% if include.client %}
+          <div class="project-client">
+            <strong>Client </strong><span>{{ include.client }}</span>
+          </div>
+        {% endif %}
+
+        {% if include.role %}
+          <div class="project-role">
+            <strong>Role </strong><span>{{ include.role }}</span>
+          </div>
+        {% endif %}
+
+        {% if include.software %}
+          <div class="project-role">
+            <strong>Software </strong><span>{{ include.software }}</span>
+          </div>
+        {% endif %}
+       {% if include.platforms %}
+          <div class="project-role">
+            <strong>Platforms </strong><span>{{ include.platforms }}</span>
+          </div>
+        {% endif %}
+      </div>
+    </div>
   </div>
 </div>
+</div>
+
+ 
