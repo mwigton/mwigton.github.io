@@ -5,7 +5,7 @@ permalink: "/projects/"
 
 projects:
   heading: "" # "Projects"
-  sub_heading: "Unity Developer"
+  sub_heading: ""
   limit: 96
   sort: date # date | weight
   view_more_button_text: "" # "More Projects"

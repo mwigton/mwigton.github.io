@@ -30,6 +30,9 @@ gallery:
     image_path: /assets/images/epsilonvr/EpsilonVRFirstPerson_mode.jpg
     alt: "placeholder image 1"
     title: "Image 1 title caption"
+
+videos:
+  - vimeoId: 133182199
 ---
 
 Target: Windows, Touch, VR  
