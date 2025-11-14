@@ -71,31 +71,32 @@ title: "Jekyll Curate"
 category_dir: category
 
 colors:
-  # light mode
-  primary_bg: "#0a1a33"
-  primary_bg_2: "#0c2344"
-  primary_bg_3: "#0d2c55"
-  primary_text: "#fdfcf9"
-  base_bg: "#fdfcf9"
-  base_bg_2: "#f7f6ed"
-  base_bg_3: "#eae8dd"
-  base_text: "#0a1a33"
-  base_text_2: "#2b3b52"
-  logo_text: "#0a1a33"
-  header_text: "#0a1a33"
+  # light-mode colors — VISUAL STUDIO CODE LIGHT THEME
+  primary_bg: "#ffffff"        # editor background
+  primary_bg_2: "#f3f3f3"      # sidebar / panel light grey
+  primary_bg_3: "#e5e5e5"      # block elements / alt background
+  primary_text: "#1e1e1e"      # main text — VS Code foreground
+  base_bg: "#ffffff"
+  base_bg_2: "#f3f3f3"
+  base_bg_3: "#e5e5e5"
+  base_text: "#1e1e1e"
+  base_text_2: "#3c3c3c"       # secondary text
+  logo_text: "#1e1e1e"
+  header_text: "#1e1e1e"
 
-  # dark mode
-  primary_bg_dark: "#fdfcf9"
-  primary_bg_2_dark: "#fdfcf9"
-  primary_bg_3_dark: "#fdfcf9"
-  primary_text_dark: "#081629"
-  base_bg_dark: "#081629"
-  base_bg_2_dark: "#0b213b"
-  base_bg_3_dark: "#103054"
-  base_text_dark: "#f5f5ec"
-  base_text_2_dark: "#98a5b7"
-  logo_text_dark: "#fdfcf9"
-  header_text_dark: "#fdfcf9"
+  # dark-mode colors — VISUAL STUDIO CODE DARK THEME
+  primary_bg_dark: "#1e1e1e"      # VS Code main background
+  primary_bg_2_dark: "#252526"    # editor-ish panel background
+  primary_bg_3_dark: "#2d2d2d"    # slightly lighter panel
+  primary_text_dark: "#f3f3f3"    # VS Code foreground
+  base_bg_dark: "#1e1e1e"
+  base_bg_2_dark: "#2a2d2e"       # VS Code sidebar-like gray
+  base_bg_3_dark: "#3c3c3c"       # hover/menu gray
+  base_text_dark: "#cccccc"       # secondary text
+  base_text_2_dark: "#9b9b9b"     # tertiary muted text
+  logo_text_dark: "#ffffff"
+  header_text_dark: "#ffffff"
+
 
 
 fonts:
