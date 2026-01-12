@@ -6,7 +6,7 @@ video_id: 133179036
 thumbnail: /assets/images/powerpact-thumb.jpg
 date: 2014-06-15
 client: "Generac"
-role: "3D Developer & Modeler"
+role: "Developer, 3D Artist"
 tech: "3DS Max, Photoshop, Unity 4.2, C#, Polytrans"
 platforms: "iOS, Android, Web"
 ---

@@ -5,7 +5,7 @@ description: "EpsilonVR is a framework, player application, and content creation
 video_id: 133182199
 thumbnail: /assets/images/epsilon-thumb.jpg
 date: 2019-06-01
-client: "Independent"
+client: "Epsilon Systems Solutions"
 role: "Developer"
 tech: "Unity 2017, C#"
 platforms: "Windows, Touch, VR"

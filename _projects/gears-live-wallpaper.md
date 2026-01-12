@@ -5,8 +5,8 @@ description: "A Live wallpaper for Android made with Unity using Uni2LWP. Featur
 video_id: 170048531
 thumbnail: /assets/images/gears-thumb.jpg
 date: 2014-08-01
-client: "Independent"
-role: "Developer"
+client: "Personal"
+role: "Developer, 3D Artist"
 tech: "3DS Max, Photoshop, Unity 4.01, Uni2LWP, C#"
 platforms: "Android"
 ---

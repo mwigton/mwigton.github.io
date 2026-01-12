@@ -6,7 +6,7 @@ video_id: 133182199
 thumbnail: /assets/images/vta-thumb.jpg
 date: 2015-08-15
 client: "US Navy"
-role: "Developer & 3D Modeler"
+role: "Developer"
 tech: "3DS Max, Photoshop, Unity 5, Visual Studio, C#"
 platforms: "Desktop"
 ---
