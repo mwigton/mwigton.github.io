@@ -85,11 +85,27 @@ body {
   color: var(--muted);
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .main-nav a {
-  color: var(--muted);
-  margin-left: 18px;
+  color: var(--text);
+  background: var(--glass);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.main-nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
 }
 
 .main-nav .cta {
@@ -97,7 +113,6 @@ body {
   color: #071018;
   padding: 8px 12px;
   border-radius: 6px;
-  margin-left: 18px;
   text-decoration: none;
 }
 
