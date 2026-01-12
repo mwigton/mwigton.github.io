@@ -6,7 +6,7 @@
 .container {
   max-width: none;
   margin: 0 auto;
-  padding: 0 28px;
+  padding: 0 48px;
 }
 
 html,
@@ -161,7 +161,7 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 450px));
   gap: 24px;
   justify-content: center;
 }
