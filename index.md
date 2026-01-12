@@ -23,7 +23,12 @@ title: Michael Wigton
         </div>
       </div>
       <div class="project-body">
-        <h3>{{ project.title }}</h3>
+        <div class="project-header">
+          <h3>{{ project.title }}</h3>
+          {% if project.date %}
+          <span class="project-date">{{ project.date | date: "%B %Y" }}</span>
+          {% endif %}
+        </div>
         <p>{{ project.description | strip | truncate: 180 }}</p>
         <div class="project-meta">
           {% if project.tech %}
@@ -37,21 +42,17 @@ title: Michael Wigton
           
           <div class="meta-details">
             {% if project.role %}
-            <div class="meta-item">
-               <span class="label">Role</span>
+            <div class="meta-item" title="Role">
+               <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+               <span class="label">Role:</span>
                <span class="value">{{ project.role }}</span>
             </div>
             {% endif %}
             {% if project.client %}
-            <div class="meta-item">
-               <span class="label">Client</span>
+            <div class="meta-item" title="Client">
+               <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+               <span class="label">Client:</span>
                <span class="value">{{ project.client }}</span>
-            </div>
-            {% endif %}
-            {% if project.date %}
-            <div class="meta-item">
-               <span class="label">Date</span>
-               <span class="value">{{ project.date | date: "%B %Y" }}</span>
             </div>
             {% endif %}
           </div>
