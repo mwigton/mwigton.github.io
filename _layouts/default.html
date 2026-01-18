@@ -45,7 +45,24 @@
     </div>
   </div>
 
-  <script src="/assets/js/main.js" defer></script>
+  <!-- Gallery modal (controlled by assets/js/main.js) -->
+  <div id="gallery-modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-gallery></div>
+    <div class="modal-panel gallery-panel">
+      <button class="modal-close" aria-label="Close gallery" data-close-gallery>×</button>
+      <div class="gallery-body">
+        <img id="gallery-image" src="" alt="Gallery image">
+        <div id="gallery-caption" class="gallery-caption"></div>
+        <button class="gallery-nav gallery-prev" aria-label="Previous image">‹</button>
+        <button class="gallery-nav gallery-next" aria-label="Next image">›</button>
+        <div class="gallery-counter">
+          <span id="gallery-current">1</span> / <span id="gallery-total">1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/main.js?v=2" defer></script>
 </body>
 
 </html>

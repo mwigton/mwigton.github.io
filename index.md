@@ -17,9 +17,23 @@ title: Michael Wigton
     <article class="project-card">
       <div class="project-media">
         <img src="{{ project.thumbnail | default: '/assets/images/project1.svg' }}" alt="{{ project.title }} thumbnail">
-        <div class="project-play" data-video-id="{{ project.video_id }}" title="Watch {{ project.title }}">
-          <div class="dot">▶</div>
-          <div>Watch demo</div>
+        <div class="project-actions">
+          {% if project.video_id %}
+          <div class="project-play" data-video-id="{{ project.video_id }}" title="Watch {{ project.title }}">
+            <div class="dot">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <div>Watch demo</div>
+          </div>
+          {% endif %}
+          {% if project.gallery_images %}
+          <div class="project-play project-gallery" data-gallery-images='{{ project.gallery_images | jsonify }}' title="View {{ project.title }} gallery">
+            <div class="dot">
+              <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+            </div>
+            <div>View gallery</div>
+          </div>
+          {% endif %}
         </div>
       </div>
       <div class="project-body">
