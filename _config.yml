@@ -5,6 +5,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://michaelwigton.com"
 markdown: kramdown
 theme: minima
+plugins:
+  - jekyll-sitemap
 exclude: ["node_modules"]
 collections:
   projects:
