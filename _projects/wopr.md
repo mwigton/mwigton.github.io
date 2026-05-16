@@ -1,5 +1,4 @@
 ---
-layout: project
 title: "WOPR"
 description: "An emulation of the screens from the movie War Games, written in C for a vintage IBM PC XT. Source code open on GitHub."
 video_id: 148292694

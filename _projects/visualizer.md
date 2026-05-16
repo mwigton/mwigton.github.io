@@ -1,5 +1,4 @@
 ---
-layout: project
 title: "Lockout TagOut"
 description: "Simple lockout tag-out procedure made with EpsilonVR for TrainPoint. Responsible for scene building, materials/textures, light-mapping, and procedure creation."
 video_id: 350540813

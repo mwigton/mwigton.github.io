@@ -1,5 +1,4 @@
 ---
-layout: project
 title: "Virtual Training Aid (VTA)"
 description: "Created for the US Navy, the Virtual Training Aid (VTA) is an interactive 3D training tool for classrooms allowing navigation of 3D models with animations and procedural flows."
 video_id: 133182199

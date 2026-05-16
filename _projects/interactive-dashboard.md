@@ -1,5 +1,4 @@
 ---
-layout: project
 title: "Generac PowerPact"
 description: "Interactive 3D showcase of Generac's new generator. CAD files optimized for real-time environments with comprehensive interactive features."
 video_id: 133179036

@@ -1,5 +1,4 @@
 ---
-layout: project
 title: "Epsilon VR"
 description: "EpsilonVR is a framework, player application, and content creation tool for developing and deploying procedure based training on desktop and VR."
 thumbnail: /assets/images/epsilon-thumb.jpg

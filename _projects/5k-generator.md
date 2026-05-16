@@ -1,5 +1,4 @@
 ---
-layout: project
 title: "5k Generator"
 description: "Created for the US Army, this prototype was a proof of concept simulating operator maintenance procedures with a DCS Panel. Designs and storyboards by a co-worker, all development and modeling by myself."
 video_id: 133166658

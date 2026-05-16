@@ -1,5 +1,4 @@
 ---
-layout: project
 title: "Gears Live Wallpaper"
 description: "A Live wallpaper for Android made with Unity using Uni2LWP. Features procedurally positioned gears with a custom gear positioning script."
 video_id: 170048531
