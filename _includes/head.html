@@ -2,13 +2,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1f1f1f">
-  <meta name="description" content="Professional portfolio showcasing projects and development work.">
-  <title>{{ page.title }} - {{ site.title }}</title>
+
+  {% assign page_title = page.title | default: site.title %}
+  {% assign page_description = page.description | default: site.description %}
+  {% assign page_url = page.url | absolute_url %}
+  {% assign social_image = '/assets/images/profile.png' | absolute_url %}
+
+  <meta name="description" content="{{ page_description }}">
+  <title>{% if page.title and page.title != site.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:image" content="{{ social_image }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_description }}">
+  <meta name="twitter:image" content="{{ social_image }}">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/assets/css/style.css?v=5">
+  <link rel="stylesheet" href="/assets/css/style.css?v={{ site.time | date: '%s' }}">
 
   <style>
     /* Critical small reset for safe rendering */
