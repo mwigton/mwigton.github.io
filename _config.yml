@@ -8,8 +8,7 @@ theme: minima
 exclude: ["node_modules"]
 collections:
   projects:
-    output: true
-    permalink: /projects/:name/
+    output: false
 
 # Build settings
 permalink: /:title/
