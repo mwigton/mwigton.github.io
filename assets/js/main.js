@@ -69,10 +69,12 @@
     const currentItem = currentGalleryImages[currentImageIndex];
     if (typeof currentItem === 'string') {
       galleryImage.src = currentItem;
+      galleryImage.alt = 'Gallery image';
       galleryCaption.textContent = '';
       galleryCaption.style.display = 'none';
     } else {
       galleryImage.src = currentItem.image;
+      galleryImage.alt = currentItem.caption || 'Gallery image';
       galleryCaption.textContent = currentItem.caption || '';
       galleryCaption.style.display = currentItem.caption ? 'block' : 'none';
     }
@@ -80,9 +82,8 @@
     galleryCurrent.textContent = currentImageIndex + 1;
     galleryTotal.textContent = currentGalleryImages.length;
 
-    // Update button states
-    galleryPrev.style.opacity = currentImageIndex === 0 ? '0.3' : '1';
-    galleryNext.style.opacity = currentImageIndex === currentGalleryImages.length - 1 ? '0.3' : '1';
+    if (galleryPrev) galleryPrev.style.opacity = currentImageIndex === 0 ? '0.3' : '1';
+    if (galleryNext) galleryNext.style.opacity = currentImageIndex === currentGalleryImages.length - 1 ? '0.3' : '1';
   }
 
   function navigateGallery(direction) {
