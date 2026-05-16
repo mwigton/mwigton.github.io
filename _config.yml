@@ -1,8 +1,8 @@
 title: "Michael Wigton"
-email: "you@example.com"
-description: "A simple dark Jekyll portfolio site"
+email: "michael.a.wigton@gmail.com"
+description: "Senior software engineer building interactive applications, tools, and immersive experiences."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000"
+url: "https://michaelwigton.com"
 markdown: kramdown
 theme: minima
 exclude: ["node_modules"]
