@@ -164,4 +164,32 @@
     setTheme(next);
   });
 
+  // Mobile nav toggle
+  const siteHeader = document.querySelector('.site-header');
+  const navToggle = document.querySelector('.nav-toggle');
+  const mainNav = document.querySelector('.main-nav');
+
+  if (navToggle && siteHeader) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = siteHeader.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.addEventListener('click', (e) => {
+      if (siteHeader.classList.contains('nav-open') && !siteHeader.contains(e.target)) {
+        siteHeader.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    if (mainNav) {
+      mainNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          siteHeader.classList.remove('nav-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  }
+
 })();
