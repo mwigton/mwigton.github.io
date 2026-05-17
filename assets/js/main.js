@@ -103,8 +103,8 @@
   });
 
   // Gallery navigation
-  galleryPrev.addEventListener('click', () => navigateGallery('prev'));
-  galleryNext.addEventListener('click', () => navigateGallery('next'));
+  if (galleryPrev) galleryPrev.addEventListener('click', () => navigateGallery('prev'));
+  if (galleryNext) galleryNext.addEventListener('click', () => navigateGallery('next'));
 
   // Delegate click for gallery buttons
   document.addEventListener('click', (e) => {
