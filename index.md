@@ -23,7 +23,6 @@ title: Michael Wigton
 
 <section id="projects" class="projects container">
   <div class="projects-grid">
-    <p class="section-label">Selected Projects</p>
     {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
     {% for project in sorted_projects %}
     <article class="project-card">
