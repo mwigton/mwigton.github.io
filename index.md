@@ -5,13 +5,18 @@ title: Michael Wigton
 
 <section class="hero">
   <div class="container">
-    <h1>Projects</h1>
-    <p class="lead">I design and build production-ready applications, tools, and interactive experiences. Below are selected projects that demonstrate product-thinking, engineering quality, and attention to detail.</p>
+    <h1>Building immersive tools<br>for real-world impact</h1>
+    <p class="lead">I design and engineer production-ready applications, VR/AR training systems, and interactive 3D experiences — with clients including the US Army, US Navy, and enterprise teams across defense and education.</p>
+    <div class="hero-cta">
+      <a href="/resume/" class="btn-primary">View Resume</a>
+      <a href="https://github.com/mwigton" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub</a>
+    </div>
   </div>
 </section>
 
 <section id="projects" class="projects container">
   <div class="projects-grid">
+    <p class="section-label">Selected Projects</p>
     {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
     {% for project in sorted_projects %}
     <article class="project-card">
@@ -58,7 +63,7 @@ title: Michael Wigton
             </div>
           </div>
         </div>
-        <p>{{ project.description | strip | truncate: 180 }}</p>
+        <p>{{ project.description | strip | truncate: 260 }}</p>
         <div class="project-meta">
           {% if project.tech %}
           <div class="tech-tags">
