@@ -17,8 +17,8 @@
       </div>
       <div class="header-right">
         <nav class="main-nav">
-          <a href="/">Projects</a>
-          <a href="/resume/">Resume</a>
+          <a href="/"{% if page.url == '/' %} class="active"{% endif %}>Projects</a>
+          <a href="/resume/"{% if page.url contains '/resume/' %} class="active"{% endif %}>Resume</a>
         </nav>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode"
           style="background:none; border:none; color:var(--text); cursor:pointer; padding:4px; display:flex;">

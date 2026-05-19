@@ -111,27 +111,22 @@ body {
 }
 
 .main-nav a {
-  color: var(--text);
-  background: var(--glass);
-  border: 1px solid var(--border-color);
-  padding: 8px 16px;
-  border-radius: 6px;
+  color: var(--muted);
   text-decoration: none;
   font-weight: 500;
-  transition: all 0.2s ease;
+  font-size: 14px;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .main-nav a:hover {
-  background: var(--hover-bg);
-  border-color: var(--hover-border);
+  color: var(--text);
 }
 
-.main-nav .cta {
-  background: var(--accent);
-  color: #071018;
-  padding: 8px 12px;
-  border-radius: 6px;
-  text-decoration: none;
+.main-nav a.active {
+  color: var(--text);
+  border-bottom-color: var(--accent);
 }
 
 .header-right {
