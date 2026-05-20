@@ -31,7 +31,7 @@ title: Michael Wigton
     {% for project in sorted_projects %}
     <article class="project-card">
       <div class="project-media">
-        <img src="{{ project.thumbnail | default: '/assets/images/project1.svg' }}" alt="{{ project.title }} thumbnail">
+        <img src="{{ project.thumbnail | default: '/assets/images/project1.svg' }}" alt="{{ project.title }} thumbnail" loading="lazy">
         <div class="project-actions">
           {% if project.video_id %}
           <div class="project-play" data-video-id="{{ project.video_id }}" title="Watch {{ project.title }}">

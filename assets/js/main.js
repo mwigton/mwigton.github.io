@@ -121,12 +121,15 @@
     }
   });
 
-  // Keyboard navigation for gallery
+  // Keyboard navigation for gallery; Escape also closes video modal
   document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (galleryModal.getAttribute('aria-hidden') === 'false') closeGallery();
+      if (modal.getAttribute('aria-hidden') === 'false') closeVideo();
+    }
     if (galleryModal.getAttribute('aria-hidden') === 'false') {
       if (e.key === 'ArrowLeft') navigateGallery('prev');
       if (e.key === 'ArrowRight') navigateGallery('next');
-      if (e.key === 'Escape') closeGallery();
     }
   });
 
